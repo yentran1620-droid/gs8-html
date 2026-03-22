@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Review Grammar: Tenses & Time Clauses</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Baloo 2', sans-serif;
+    }
+    .correct { 
+      outline: 2px solid #16a34a; 
+      background-color: #f0fdf4; 
+    }
+    .incorrect { 
+      outline: 2px solid #ef4444; 
+      background-color: #fef2f2; 
+    }
+    .radio-selected {
+      background-color: #e0e7ff;
+      border-color: #6366f1;
+      color: #4338ca;
+      font-weight: 600;
+    }
+    @media print {
+      .no-print { display: none; }
+      input { border: none; border-bottom: 1px solid #ccc; }
+    }
+  </style>
+</head>
+<body class="bg-blue-50 min-h-screen py-8 px-4">
+  <main class="max-w-4xl mx-auto bg-white rounded-2xl shadow-xl overflow-hidden">
+    <header class="bg-indigo-600 p-6 text-white text-center relative overflow-hidden">
+      <div class="relative z-10">
+        <h1 class="text-3xl md:text-4xl font-bold mb-2">GRAMMAR REVIEW</h1>
+        <p class="text-indigo-100 text-lg">Past Continuous, Past Simple, Adverbs of Time & Wh-Questions</p>
+        <p class="text-indigo-200 text-sm mt-2 italic">(Ôn tập: Quá khứ tiếp diễn, Quá khứ đơn, Trạng từ chỉ thời gian & Câu hỏi Wh-)</p>
+      </div>
+      <div class="absolute top-0 left-0 w-full h-full opacity-10 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')]"></div>
+    </header>
+
+    <div class="p-6 md:p-8 space-y-8">
+      
+      <!-- Part 1: Multiple Choice -->
+      <section>
+        <div class="flex items-center gap-3 mb-4 border-b pb-2 border-indigo-100">
+          <div class="bg-indigo-100 text-indigo-700 w-8 h-8 rounded-full flex items-center justify-center font-bold">1</div>
+          <h2 class="text-xl font-bold text-gray-800">Multiple Choice (Trắc nghiệm)</h2>
+        </div>
+        <p class="text-gray-500 italic mb-4">Choose the best answer to complete each sentence.</p>
+        
+        <div class="space-y-4">
+          <!-- Q1 -->
+          <div class="mcq-item bg-gray-50 p-4 rounded-xl">
+            <p class="font-semibold text-gray-800 mb-3">1. When I __________ home, my mom was cooking dinner.</p>
+            <div class="grid grid-cols-2 gap-3" data-name="mcq1" data-key="A">
+              <button type="button" class="mcq-option p-3 border rounded-lg hover:bg-indigo-50 transition text-left" onclick="selectOption(this, 'A')">A. arrived</button>
+              <button type="button" class="mcq-option p-3 border rounded-lg hover:bg-indigo-50 transition text-left" onclick="selectOption(this, 'B')">B. was arriving</button>
+              <button type="button" class="mcq-option p-3 border rounded-lg hover:bg-indigo-50 transition text-left" onclick="selectOption(this, 'C')">C. arrive</button>
+              <button type="button" class="mcq-option p-3 border rounded-lg hover:bg-indigo-50 transition text-left" onclick="selectOption(this, 'D')">D. arrives</button>
+            </div>
+          </div>
+
+          <!-- Q2 -->
+          <div class="mcq-item bg-gray-50 p-4 rounded-xl">
+            <p class="font-semibold text-gray-800 mb-3">2. She went to the park __________ she finished her homework.</p>
+            <div class="grid grid-cols-2 gap-3" data-name="mcq2" data-key="B">
+              <button type="button" class="mcq-option p-3 border rounded-lg hover:bg-indigo-50 transition text-left" onclick="selectOption(this, 'A')">A. while</button>
+              <button type="button" class="mcq-option p-3 border rounded-lg hover:bg-indigo-50 transition text-left" onclick="selectOption(this, 'B')">B. after</button>
+              <button type="button" class="mcq-option p-3 border rounded-lg hover:bg-indigo-50 transition text-left" onclick="selectOption(this, 'C')">C. during</button>
+              <button type="button" class="mcq-option p-3 border rounded-lg hover:bg-indigo-50 transition text-left" onclick="selectOption(this, 'D')">D. as soon</button>
+            </div>
+          </div>
+
+          <!-- Q3 -->
+          <div class="mcq-item bg-gray-50 p-4 rounded-xl">
+            <p class="font-semibold text-gray-800 mb-3">3. __________ you playing football at 5 pm yesterday?</p>
+            <div class="grid grid-cols-2 gap-3" data-name="mcq3" data-key="C">
+              <button type="button" class="mcq-option p-3 border rounded-lg hover:bg-indigo-50 transition text-left" onclick="selectOption(this, 'A')">A. Did</button>
+              <button type="button" class="mcq-option p-3 border rounded-lg hover:bg-indigo-50 transition text-left" onclick="selectOption(this, 'B')">B. Do</button>
+              <button type="button" class="mcq-option p-3 border rounded-lg hover:bg-indigo-50 transition text-left" onclick="selectOption(this, 'C')">C. Were</button>
+              <button type="button" class="mcq-option p-3 border rounded-lg hover:bg-indigo-50 transition text-left" onclick="selectOption(this, 'D')">D. Are</button>
+            </div>
+          </div>
+
+          <!-- Q4 -->
+          <div class="mcq-item bg-gray-50 p-4 rounded-xl">
+            <p class="font-semibold text-gray-800 mb-3">4. I will call you as soon as I __________ at the airport.</p>
+            <div class="grid grid-cols-2 gap-3" data-name="mcq4" data-key="A">
+              <button type="button" class="mcq-option p-3 border rounded-lg hover:bg-indigo-50 transition text-left" onclick="selectOption(this, 'A')">A. arrive</button>
+              <button type="button" class="mcq-option p-3 border rounded-lg hover:bg-indigo-50 transition text-left" onclick="selectOption(this, 'B')">B. will arrive</button>
+              <button type="button" class="mcq-option p-3 border rounded-lg hover:bg-indigo-50 transition text-left" onclick="selectOption(this, 'C')">C. arrived</button>
+              <button type="button" class="mcq-option p-3 border rounded-lg hover:bg-indigo-50 transition text-left" onclick="selectOption(this, 'D')">D. arriving</button>
+            </div>
+          </div>
+
+          <!-- Q5 -->
+          <div class="mcq-item bg-gray-50 p-4 rounded-xl">
+            <p class="font-semibold text-gray-800 mb-3">5. __________ do you go to the gym? - Twice a week.</p>
+            <div class="grid grid-cols-2 gap-3" data-name="mcq5" data-key="B">
+              <button type="button" class="mcq-option p-3 border rounded-lg hover:bg-indigo-50 transition text-left" onclick="selectOption(this, 'A')">A. How long</button>
+              <button type="button" class="mcq-option p-3 border rounded-lg hover:bg-indigo-50 transition text-left" onclick="selectOption(this, 'B')">B. How often</button>
+              <button type="button" class="mcq-option p-3 border rounded-lg hover:bg-indigo-50 transition text-left" onclick="selectOption(this, 'C')">C. When</button>
+              <button type="button" class="mcq-option p-3 border rounded-lg hover:bg-indigo-50 transition text-left" onclick="selectOption(this, 'D')">D. What time</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Part 2: Write Sentences -->
+      <section>
+        <div class="flex items-center gap-3 mb-4 border-b pb-2 border-indigo-100">
+          <div class="bg-indigo-100 text-indigo-700 w-8 h-8 rounded-full flex items-center justify-center font-bold">2</div>
+          <h2 class="text-xl font-bold text-gray-800">Write sentences using Past Continuous and Past Simple</h2>
+        </div>
+        <p class="text-gray-500 italic mb-4">Write complete sentences using the suggested words. Pay attention to the verb tenses.</p>
+        
+        <div class="space-y-4">
+          <div class="question-item">
+            <p class="font-medium text-gray-700 mb-1">1. They / do / homework / 8 p.m. last night</p>
+            <input type="text" class="w-full border border-gray-300 rounded-lg p-3 focus:ring-2 focus:ring-indigo-200 focus:border-indigo-500 outline-none transition" data-key="They were doing homework at 8 p.m. last night." placeholder="Type your answer...">
+          </div>
+
+          <div class="question-item">
+            <p class="font-medium text-gray-700 mb-1">2. She / read / a book / this time yesterday</p>
+            <input type="text" class="w-full border border-gray-300 rounded-lg p-3 focus:ring-2 focus:ring-indigo-200 focus:border-indigo-500 outline-none transition" data-key="She was reading a book at this time yesterday." placeholder="Type your answer...">
+          </div>
+
+          <div class="question-item">
+            <p class="font-medium text-gray-700 mb-1">3. What / you / do / at 9 a.m. yesterday?</p>
+            <input type="text" class="w-full border border-gray-300 rounded-lg p-3 focus:ring-2 focus:ring-indigo-200 focus:border-indigo-500 outline-none transition" data-key="What were you doing at 9 a.m. yesterday?" placeholder="Type your answer...">
+          </div>
+
+          <div class="question-item">
+            <p class="font-medium text-gray-700 mb-1">4. He / drive / to work / when / it / rain</p>
+            <input type="text" class="w-full border border-gray-300 rounded-lg p-3 focus:ring-2 focus:ring-indigo-200 focus:border-indigo-500 outline-none transition" data-key="He was driving to work when it rained." placeholder="Type your answer...">
+          </div>
+
+          <div class="question-item">
+            <p class="font-medium text-gray-700 mb-1">5. While / they / play / football, / it / start / to rain</p>
+            <input type="text" class="w-full border border-gray-300 rounded-lg p-3 focus:ring-2 focus:ring-indigo-200 focus:border-indigo-500 outline-none transition" data-key="While they were playing football, it started to rain." placeholder="Type your answer...">
+          </div>
+
+          <div class="question-item">
+            <p class="font-medium text-gray-700 mb-1">6. What / she / do / from 6 to 8 yesterday evening?</p>
+            <input type="text" class="w-full border border-gray-300 rounded-lg p-3 focus:ring-2 focus:ring-indigo-200 focus:border-indigo-500 outline-none transition" data-key="What was she doing from 6 to 8 yesterday evening?" placeholder="Type your answer...">
+          </div>
+
+          <div class="question-item">
+            <p class="font-medium text-gray-700 mb-1">7. 7 o’clock / yesterday morning, / I / have / breakfast</p>
+            <input type="text" class="w-full border border-gray-300 rounded-lg p-3 focus:ring-2 focus:ring-indigo-200 focus:border-indigo-500 outline-none transition" data-key="At 7 o’clock yesterday morning, I was having breakfast." placeholder="Type your answer...">
+          </div>
+
+          <div class="question-item">
+            <p class="font-medium text-gray-700 mb-1">8. they / watch / TV / 10 p.m. last night?</p>
+            <input type="text" class="w-full border border-gray-300 rounded-lg p-3 focus:ring-2 focus:ring-indigo-200 focus:border-indigo-500 outline-none transition" data-key="Were they watching TV at 10 p.m. last night?" placeholder="Type your answer...">
+          </div>
+        </div>
+      </section>
+
+      <!-- Part 3: Combine Sentences -->
+      <section>
+        <div class="flex items-center gap-3 mb-4 border-b pb-2 border-indigo-100">
+          <div class="bg-indigo-100 text-indigo-700 w-8 h-8 rounded-full flex items-center justify-center font-bold">3</div>
+          <h2 class="text-xl font-bold text-gray-800">Combine sentences using adverbs of time</h2>
+        </div>
+        <p class="text-gray-500 italic mb-4">Combine the sentences using: when, while, before, after, as soon as, until.</p>
+        
+        <div class="space-y-4">
+          <div class="question-item">
+            <p class="font-medium text-gray-700 mb-1">1. I was walking in the park. I saw a strange dog. (when)</p>
+            <input type="text" class="w-full border border-gray-300 rounded-lg p-3 focus:ring-2 focus:ring-indigo-200 focus:border-indigo-500 outline-none transition" data-key="I was walking in the park when I saw a strange dog." placeholder="Combine sentence...">
+          </div>
+
+          <div class="question-item">
+            <p class="font-medium text-gray-700 mb-1">2. She was cooking dinner. The lights went out. (while)</p>
+            <input type="text" class="w-full border border-gray-300 rounded-lg p-3 focus:ring-2 focus:ring-indigo-200 focus:border-indigo-500 outline-none transition" data-key="While she was cooking dinner, the lights went out." placeholder="Combine sentence...">
+          </div>
+
+          <div class="question-item">
+            <p class="font-medium text-gray-700 mb-1">3. We finished the test. We left the classroom. (after)</p>
+            <input type="text" class="w-full border border-gray-300 rounded-lg p-3 focus:ring-2 focus:ring-indigo-200 focus:border-indigo-500 outline-none transition" data-key="After we finished the test, we left the classroom." placeholder="Combine sentence...">
+          </div>
+
+          <div class="question-item">
+            <p class="font-medium text-gray-700 mb-1">4. I will tell you the truth. I see you tomorrow. (when)</p>
+            <input type="text" class="w-full border border-gray-300 rounded-lg p-3 focus:ring-2 focus:ring-indigo-200 focus:border-indigo-500 outline-none transition" data-key="I will tell you the truth when I see you tomorrow." placeholder="Combine sentence...">
+          </div>
+
+          <div class="question-item">
+            <p class="font-medium text-gray-700 mb-1">5. He brushed his teeth. He went to bed. (before)</p>
+            <input type="text" class="w-full border border-gray-300 rounded-lg p-3 focus:ring-2 focus:ring-indigo-200 focus:border-indigo-500 outline-none transition" data-key="He brushed his teeth before he went to bed." placeholder="Combine sentence...">
+          </div>
+
+          <div class="question-item">
+            <p class="font-medium text-gray-700 mb-1">6. I will call you. I arrive home. (as soon as)</p>
+            <input type="text" class="w-full border border-gray-300 rounded-lg p-3 focus:ring-2 focus:ring-indigo-200 focus:border-indigo-500 outline-none transition" data-key="I will call you as soon as I arrive home." placeholder="Combine sentence...">
+          </div>
+
+          <div class="question-item">
+            <p class="font-medium text-gray-700 mb-1">7. Stay here. I come back. (until)</p>
+            <input type="text" class="w-full border border-gray-300 rounded-lg p-3 focus:ring-2 focus:ring-indigo-200 focus:border-indigo-500 outline-none transition" data-key="Stay here until I come back." placeholder="Combine sentence...">
+          </div>
+
+          <div class="question-item">
+            <p class="font-medium text-gray-700 mb-1">8. It gets dark. We usually go home. (when)</p>
+            <input type="text" class="w-full border border-gray-300 rounded-lg p-3 focus:ring-2 focus:ring-indigo-200 focus:border-indigo-500 outline-none transition" data-key="When it gets dark, we usually go home." placeholder="Combine sentence...">
+          </div>
+        </div>
+      </section>
+
+      <!-- Part 4: Make Questions -->
+      <section>
+        <div class="flex items-center gap-3 mb-4 border-b pb-2 border-indigo-100">
+          <div class="bg-indigo-100 text-indigo-700 w-8 h-8 rounded-full flex items-center justify-center font-bold">4</div>
+          <h2 class="text-xl font-bold text-gray-800">Make questions for the underlined parts</h2>
+        </div>
+        <p class="text-gray-500 italic mb-4">Write the question for the word in brackets.</p>
+        
+        <div class="space-y-4">
+          <div class="question-item">
+            <p class="font-medium text-gray-700 mb-1">1. She is reading a book. (What)</p>
+            <input type="text" class="w-full border border-gray-300 rounded-lg p-3 focus:ring-2 focus:ring-indigo-200 focus:border-indigo-500 outline-none transition" data-key="What is she reading?" placeholder="Write question...">
+          </div>
+
+          <div class="question-item">
+            <p class="font-medium text-gray-700 mb-1">2. They went to school yesterday. (When)</p>
+            <input type="text" class="w-full border border-gray-300 rounded-lg p-3 focus:ring-2 focus:ring-indigo-200 focus:border-indigo-500 outline-none transition" data-key="When did they go to school?" placeholder="Write question...">
+          </div>
+
+          <div class="question-item">
+            <p class="font-medium text-gray-700 mb-1">3. He is playing football in the park. (Where)</p>
+            <input type="text" class="w-full border border-gray-300 rounded-lg p-3 focus:ring-2 focus:ring-indigo-200 focus:border-indigo-500 outline-none transition" data-key="Where is he playing football?" placeholder="Write question...">
+          </div>
+
+          <div class="question-item">
+            <p class="font-medium text-gray-700 mb-1">4. She studies English every day. (How often)</p>
+            <input type="text" class="w-full border border-gray-300 rounded-lg p-3 focus:ring-2 focus:ring-indigo-200 focus:border-indigo-500 outline-none transition" data-key="How often does she study English?" placeholder="Write question...">
+          </div>
+
+          <div class="question-item">
+            <p class="font-medium text-gray-700 mb-1">5. They were watching TV last night. (What)</p>
+            <input type="text" class="w-full border border-gray-300 rounded-lg p-3 focus:ring-2 focus:ring-indigo-200 focus:border-indigo-500 outline-none transition" data-key="What were they watching last night?" placeholder="Write question...">
+          </div>
+
+          <div class="question-item">
+            <p class="font-medium text-gray-700 mb-1">6. We can save electricity by turning off the lights. (How)</p>
+            <input type="text" class="w-full border border-gray-300 rounded-lg p-3 focus:ring-2 focus:ring-indigo-200 focus:border-indigo-500 outline-none transition" data-key="How can we save electricity?" placeholder="Write question...">
+          </div>
+
+          <div class="question-item">
+            <p class="font-medium text-gray-700 mb-1">7. We should use reusable bags to protect the environment. (Why)</p>
+            <input type="text" class="w-full border border-gray-300 rounded-lg p-3 focus:ring-2 focus:ring-indigo-200 focus:border-indigo-500 outline-none transition" data-key="Why should we use reusable bags?" placeholder="Write question...">
+          </div>
+
+          <div class="question-item">
+            <p class="font-medium text-gray-700 mb-1">8. We should choose the blue T-shirt. (Which)</p>
+            <input type="text" class="w-full border border-gray-300 rounded-lg p-3 focus:ring-2 focus:ring-indigo-200 focus:border-indigo-500 outline-none transition" data-key="Which T-shirt should we choose?" placeholder="Write question...">
+          </div>
+
+          <div class="question-item">
+            <p class="font-medium text-gray-700 mb-1">9. They are planting trees in the park now. (Where)</p>
+            <input type="text" class="w-full border border-gray-300 rounded-lg p-3 focus:ring-2 focus:ring-indigo-200 focus:border-indigo-500 outline-none transition" data-key="Where are they planting trees now?" placeholder="Write question...">
+          </div>
+
+          <div class="question-item">
+            <p class="font-medium text-gray-700 mb-1">10. She goes to school by bike every day. (How)</p>
+            <input type="text" class="w-full border border-gray-300 rounded-lg p-3 focus:ring-2 focus:ring-indigo-200 focus:border-indigo-500 outline-none transition" data-key="How does she go to school every day?" placeholder="Write question...">
+          </div>
+        </div>
+      </section>
+
+      <!-- Controls -->
+      <div class="flex flex-wrap justify-center gap-4 pt-6 border-t no-print">
+        <button onclick="checkAnswers()" class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 px-8 rounded-full shadow-lg transition transform hover:scale-105 active:scale-95">Check Answers</button>
+        <button onclick="resetAll()" class="bg-gray-200 hover:bg-gray-300 text-gray-700 font-bold py-3 px-8 rounded-full shadow transition">Reset</button>
+      </div>
+      
+      <div id="score-display" class="hidden text-center mt-6 p-4 bg-indigo-50 rounded-xl border border-indigo-200">
+        <p class="text-xl font-bold text-indigo-800">Your Score: <span id="score-val">0</span> / <span id="total-val">0</span></p>
+      </div>
+
+    </div>
+  </main>
+
+  <script>
+    function normalize(str) {
+      return str.toLowerCase().replace(/[.,?]/g, '').trim().replace(/\s+/g, ' ');
+    }
+
+    // Select option for MCQ
+    function selectOption(btn, value) {
+      // Remove selected from siblings
+      const parent = btn.parentElement;
+      const buttons = parent.querySelectorAll('.mcq-option');
+      buttons.forEach(b => b.classList.remove('radio-selected', 'bg-indigo-100'));
+      
+      // Add selected to clicked
+      btn.classList.add('radio-selected', 'bg-indigo-100');
+      parent.dataset.selected = value;
+    }
+
+    function checkAnswers() {
+      let correct = 0;
+      let total = 0;
+
+      // Check MCQs
+      const mcqItems = document.querySelectorAll('.grid[data-key]');
+      mcqItems.forEach(item => {
+        total++;
+        const selected = item.dataset.selected;
+        const key = item.dataset.key;
+        const options = item.querySelectorAll('button');
+        
+        // Reset styles
+        options.forEach(btn => btn.classList.remove('correct', 'incorrect'));
+
+        if (selected === key) {
+          correct++;
+          options.forEach(btn => {
+            if(btn.textContent.startsWith(key)) btn.classList.add('correct');
+          });
+        } else {
+          if (selected) {
+             const selectedBtn = Array.from(options).find(btn => btn.textContent.startsWith(selected));
+             if(selectedBtn) selectedBtn.classList.add('incorrect');
+          }
+        }
+      });
+
+      // Check text inputs
+      const inputs = document.querySelectorAll('input[data-key]');
+      inputs.forEach(input => {
+        total++;
+        const userVal = normalize(input.value);
+        const keyVal = normalize(input.dataset.key);
+        
+        input.classList.remove('correct', 'incorrect');
+        if (userVal === keyVal && userVal !== '') {
+          input.classList.add('correct');
+          correct++;
+        } else {
+          if (input.value !== '') input.classList.add('incorrect');
+        }
+      });
+
+      // Show score
+      const scoreDisplay = document.getElementById('score-display');
+      document.getElementById('score-val').textContent = correct;
+      document.getElementById('total-val').textContent = total;
+      scoreDisplay.classList.remove('hidden');
+    }
+
+    function resetAll() {
+      // Reset MCQs
+      const mcqItems = document.querySelectorAll('.grid[data-key]');
+      mcqItems.forEach(item => {
+        delete item.dataset.selected;
+        const options = item.querySelectorAll('button');
+        options.forEach(btn => btn.classList.remove('correct', 'incorrect', 'radio-selected', 'bg-indigo-100'));
+      });
+
+      // Reset text inputs
+      const inputs = document.querySelectorAll('input[data-key]');
+      inputs.forEach(input => {
+        input.value = '';
+        input.classList.remove('correct', 'incorrect');
+      });
+
+      document.getElementById('score-display').classList.add('hidden');
+    }
+  </script>
+</body>
+</html>
